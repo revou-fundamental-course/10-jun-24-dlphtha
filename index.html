@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+   <header>
+    <h1>Temperature Converter</h1>
+    <hr/>
+</header> 
+
+   <!-- Main Content -->
+    <main>
+        <p>Temperature degrees conversions of Celsius (&degC), Fahrenheit (&degF) : </p>
+
+         <!-- Celcius Section -->
+         <section>
+            <div class="column">
+                <table>
+                  <tr>
+                    <th>Celcius (&degC)</th>
+                    </tr>
+                  <tr>
+                     <td><textarea input id="inputNumber" name="inputNumber" placeholder="Input Number"></textarea></td>
+                  </tr>
+               
+                </table>
+              </div>
+         </section>
+
+         <!-- Reverse Button Section -->
+         <button class="button" value="&#8646" onClick="reverse()">&#8646;</button>
+        
+          <!-- Farenheit Section -->
+          <section>
+            <table>
+                <tr>
+                  <th>Farenheit (&degF)</th>
+                </tr>
+               
+                <tr>
+                  <td><textarea input id="OutputNumber" name="OutputNumber" placeholder="Converted"></textarea></td>
+                </tr>
+               
+                <tr>
+                  <td align="right"><button class="reset" onClick="reset()">Reset</button></td>
+                </tr>
+            </table>
+            </div>
+         </section>
+
+          <!-- Calculation Section -->
+          <section>
+            <header>
+                <p><b>Calculation</b><p>
+            </header>
+
+            <section>
+            <table>
+            <tr>
+             <td><textarea></textarea></td>
+            </tr>
+            </table>
+            </section>
+
+            <!-- Formula Section -->
+          <section>
+            <header>
+                <p><i></i>Formula</p></i><p>
+            </header>
+            <p><span class="subject-info">S</span>(&deg;F) <sup>=</sup> (<span class="subject-info">S</span>(&deg;C) x 9/5) + 32 </p>
+          </section>
+    </main>
+       <!-- Link Javascript -->
+        <script src="./js/script.js"></script>
+</body>
+</html>
